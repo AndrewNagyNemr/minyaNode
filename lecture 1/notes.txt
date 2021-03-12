@@ -1,0 +1,8 @@
+=======
+Users
+=======
+
+get all users  = request GET  .../users
+request POST   = request POST  .../users {users data}
+request PUT    = request PUT  .../users/:id {new data} 
+request Delete = request DELETE  .../users/:id
