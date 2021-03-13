@@ -1,0 +1,3 @@
+-- enhancements : 
+    -example title='first title'
+-- user friendly message if trying to remove non-existing object

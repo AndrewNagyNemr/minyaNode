@@ -1,0 +1,5 @@
+My project => X => Y => (A, B)
+Package => Package manager
+
++++++++++++++++++++++++++++++
+CRUD => create, retrieve,  update, delete

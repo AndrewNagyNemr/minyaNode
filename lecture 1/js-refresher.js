@@ -115,3 +115,25 @@
 // const {age, name} = person
 
 //==========================
+
+
+// const person = {
+//     name : "Ahmed"
+// }
+
+// const newPerson = person
+
+// newPerson.name = "Moustafa"
+
+// console.log(person); // => "Moustafa"
+
+
+// const person = {
+//     name : "Ahmed"
+// }
+
+// const newPerson = { ...person }
+
+// newPerson.name = "Moustafa"
+
+// console.log(person); // => "Ahmed"
