@@ -1,0 +1,14 @@
+-example of async operation {
+    -callback
+    -promise => (then , async and await)
+}
+
+middleware 
+
+Bounus
+
+    middleware (dummy authentication) => req body
+    {
+        username : admin
+        password : admin 
+    } 
