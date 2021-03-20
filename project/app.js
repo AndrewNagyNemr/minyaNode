@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const express = require("express");
-const userRouter = require("./routes/users")
+const userRouter = require("./routes/users");
+const viewUserRouter = require("./routes/viewUsers");
 
 mongoose
   .connect("mongodb://localhost/db", {
@@ -18,7 +19,13 @@ const app = express();
 
 //middleware
 app.use(express.json());
-app.use("/users", userRouter);
+app.use("/api/users", userRouter);
+app.use("/users", viewUserRouter);
+app.set("view engine", "ejs");
+
+app.get("/", (req, res)=>{
+    res.render("index", {title: "My App"})
+})
 
 app.listen(3000, () => {
   console.log("listening on port 3000");

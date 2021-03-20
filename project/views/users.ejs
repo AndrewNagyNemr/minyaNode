@@ -1,0 +1,11 @@
+<%- include("includes/head")%>
+<ul>
+  <% if(users.length === 0 ){ %>
+  <h4>No Users</h4>
+  <% } %> <% for (let user of users){ %>
+  <li><%= user.firstName %></li>
+  <% } %>
+  <a class="btn btn-primary" href="/">Home</a>
+</ul>
+
+<%- include("includes/tail")%>
