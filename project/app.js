@@ -19,13 +19,15 @@ const app = express();
 
 //middleware
 app.use(express.json());
+app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
 app.use("/api/users", userRouter);
 app.use("/users", viewUserRouter);
 app.set("view engine", "ejs");
 
-app.get("/", (req, res)=>{
-    res.render("index", {title: "My App"})
-})
+app.get("/", (req, res) => {
+  res.render("index", { title: "My App" });
+});
 
 app.listen(3000, () => {
   console.log("listening on port 3000");

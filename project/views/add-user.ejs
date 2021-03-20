@@ -1,0 +1,19 @@
+<%- include("includes/head.ejs") %>
+<form method="POST" action="/users/add">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input name="email" type="email" class="form-control" id="email" />
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input name="firstName" type="text" class="form-control" id="firstName" />
+  </div>
+  <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input name="lastName" type="text" class="form-control" id="lastName" />
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+  <a href="/" class="btn btn-warning">Home</a>
+</form>
+
+<%- include("includes/tail.ejs") %>
